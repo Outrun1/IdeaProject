@@ -1,7 +1,5 @@
 package algorithm.exp_1;
 
-import java.util.Arrays;
-
 public class Sort {
 
     /**
@@ -136,7 +134,7 @@ public class Sort {
         long Tquick = 0;
         long Tinsert = 0;
 
-        for (int i = 0; i < 0; i++) {
+        for (int i = 0; i < 20; i++) {
 
             //初始化随机数数组，并做好准备工作
             int n = 100000;

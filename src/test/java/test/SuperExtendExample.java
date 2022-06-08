@@ -60,5 +60,26 @@ public class SuperExtendExample extends SuperExample {
         res[0] = Integer.parseInt(string);
         res[0] = Integer.valueOf(string);
         System.out.println(Arrays.toString(res));
+        HashSet<List<Integer>> set = new HashSet<>();
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(0);
+        list1.add(1);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(1);
+        list2.add(0);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(0);
+        list3.add(1);
+        List<Integer> list4 = new ArrayList<>();
+        list4.add(0);
+        list4.add(1);
+        set.add(list1);
+        set.add(list2);
+        set.add(list3);
+        set.add(list4);
+        for (List<Integer> tempInt : set) {
+            System.out.println(tempInt.get(0) + " " + tempInt.get(1));
+        }
+        System.out.println(set.contains(list3));
     }
 }
